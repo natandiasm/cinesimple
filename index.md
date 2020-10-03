@@ -13,8 +13,6 @@ Player de video para um link passado por get
 
 ### Player
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 <video width="400" controls>
   <source src="<script>
 document.write(getUrlVars()["mp4"]);
