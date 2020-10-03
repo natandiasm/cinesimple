@@ -1,3 +1,13 @@
+## Cine Simple
+
+Player de video para um link passado por get
+
+### Player
+
+<video id="video" width="320" height="240">
+</video>
+
+
 <script>
 function getUrlVars() {
     var vars = {};
@@ -6,16 +16,12 @@ function getUrlVars() {
     });
     return vars;
 }
+    
+let video = document.getElementById('video');
+let source = document.createElement('source');
+
+source.setAttribute('src', getUrlVars()["mp4"]);
+
+video.appendChild(source);
+video.play();
 </script>
-## Cine Simple
-
-Player de video para um link passado por get
-
-### Player
-
-<video width="400" controls>
-  <source src="<script>
-document.write(getUrlVars()["mp4"]);
-</script>" type="video/mp4">
-  Your browser does not support HTML video.
-</video>
