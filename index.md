@@ -4,7 +4,7 @@ Player de video para um link passado por get
 
 ### Player
 
-<video id="video" width="320" height="240">
+<video id="video" width="320" height="240" controls>
 </video>
 
 
